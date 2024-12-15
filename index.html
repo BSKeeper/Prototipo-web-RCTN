@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCTN - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo" style="font-family: CYBORG;">RCTN</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="puc/index.html">PUC</a></li>
+                <li><a href="expertos/index.html">Expertos</a></li>
+                <li><a href="nomina/index.html">Nómina</a></li>
+                <li><a href="contacto/index.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="login">Iniciar Sesión</button>
+            <button class="register">Registrarse</button>
+        </div>
+    </header>
+
+<!-- Carrusel de imágenes -->
+<section class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-item" id="carousel1">
+            <a href="puc/index.html">
+                <img src="https://picsum.photos/id/1/1300/300" alt="PUC">
+                <div class="carousel-caption">Accede al PUC</div>
+            </a>
+        </div>
+        <div class="carousel-item" id="carousel2">
+            <a href="expertos/index.html">
+                <img src="https://picsum.photos/id/20/1300/300" alt="Expertos">
+                <div class="carousel-caption">Consulta a los Expertos</div>
+            </a>
+        </div>
+        <div class="carousel-item" id="carousel3">
+            <a href="nomina/index.html">
+                <img src="https://picsum.photos/id/163/1300/300" alt="Nómina">
+                <div class="carousel-caption">Consejos para tu nómina</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<main>
+    <section class="hero">
+        <h1>Bienvenido a <span class="rctn-logo">RCTN</span></h1>
+        <p>El recurso digital ideal para la gestión contable y tributaria.</p>
+        <p><strong>- Inicia sesión o regístrate</strong></p>
+
+        <!-- Botones de inicio de sesión y registro duplicados -->
+        <div class="auth-buttons">
+            <button class="login">Iniciar Sesión</button>
+            <button class="register">Registrarse</button>
+        </div>
+
+    </section>
+
+
+<!-- Formulario de Registro -->
+<section id="registro" class="form-section" style="display: none;">
+    <h2>Registro de Usuario</h2>
+    <form id="formRegistro" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required>
+
+        <label for="tipoUsuario">Tipo de Usuario:</label>
+        <select id="tipoUsuario" name="tipoUsuario">
+            <option value="MIPYME">MIPYME</option>
+            <option value="PersonaNatural">Persona Natural</option>
+        </select>
+
+        <button type="submit">Registrar</button>
+    </form>
+</section>
+    
+<!-- Formulario de inicio de sesión (oculto por defecto) -->
+<section id="login" class="form-section" style="display: none;">
+    <h2>Iniciar Sesión</h2>
+    <form id="formLogin" method="POST">
+        <label for="correoLogin">Correo Electrónico:</label>
+        <input type="email" id="correoLogin" name="correo" required>
+
+        <label for="contraseñaLogin">Contraseña:</label>
+        <input type="password" id="contraseñaLogin" name="contraseña" required>
+
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+</section> 
+
+<!-- Mini sección de noticias -->
+<section class="news-section">
+    <div class="news-item">
+        <h3>Actualización en el PUC</h3>
+        <p>Conoce las últimas actualizaciones del Plan Único de Cuentas que facilitan tu gestión contable.</p>
+    </div>
+    <div class="news-item">
+        <h3>Recomendaciones de Nómina</h3>
+        <p>Te ofrecemos consejos para gestionar la nómina de manera efectiva y cumplir con las normativas.</p>
+    </div>
+    <div class="news-item">
+        <h3>Multas y Sanciones</h3>
+        <p>Entérate de las últimas multas y sanciones impuestas por la DIAN y el Ministerio de Hacienda.</p>
+    </div>
+    <div class="news-item">
+        <h3>Consultoría Especializada</h3>
+        <p>Consulta a nuestros especialistas para recibir asesoría personalizada en contabilidad y tributación.</p>
+    </div>
+    <div class="news-item">
+        <h3>Noticias sobre Tributación</h3>
+        <p>Mantente al tanto de las novedades y cambios en las leyes tributarias que afectan a tu negocio.</p>
+    </div>
+    <div class="news-item">
+        <h3>Consejos de Administración</h3>
+        <p>Descubre estrategias de administración que optimizan la gestión de tu MIPYME.</p>
+    </div>
+</section>
+</main>
+
+
+
+  <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 <span class="rctn-logo">RCTN</span>. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

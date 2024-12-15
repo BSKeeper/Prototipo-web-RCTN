@@ -1,0 +1,202 @@
+/* Importing the custom font */
+@font-face {
+    font-family: 'CYBORG';
+    src: url('../assets/fonts/CYBORG_.TTF') format('woff2');
+}
+
+/* Root variables for the color palette */
+:root {
+    --blue-light: #d0ebff;
+    --blue-main: #1e90ff;
+    --blue-dark: #003f88;
+    --white: #ffffff;
+    --grey-light: #f8f9fa;
+    --grey-dark: #343a40;
+    --red-dark: #8B0000;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--grey-light);
+    color: var(--grey-dark);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--blue-main);
+    color: var(--white);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--red-dark);
+}
+/* Clase para aplicar la fuente CYBORG específicamente al texto RCTN */
+.rctn-logo {
+    font-family: 'CYBORG', sans-serif;
+    color: var(--red-dark); /* Opcional, para asegurarte de que el color sea consistente */
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: var(--blue-light);
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons .login {
+    background-color: var(--white);
+    color: var(--blue-main);
+}
+
+.auth-buttons .login:hover {
+    background-color: var(--blue-light);
+}
+
+.auth-buttons .register {
+    background-color: var(--blue-dark);
+    color: var(--white);
+}
+
+.auth-buttons .register:hover {
+    background-color: var(--blue-main);
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, var(--blue-light), var(--blue-main));
+    color: var(--white);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: var(--blue-dark);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: var(--blue-main);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--blue-dark);
+    color: var(--white);
+}
+
+
+
+
+/* Estilos generales para la sección de Expertos */
+.expertos-section {
+    padding: 50px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.expertos-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.expertos-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.expertos-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.experto-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.experto-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.experto-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+.experto-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.experto-card a {
+    text-decoration: none;
+    background-color: var(--blue-main);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.experto-card a:hover {
+    background-color: var(--blue-dark);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--blue-dark);
+    color: var(--white);
+}

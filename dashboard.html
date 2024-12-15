@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCTN - Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="logo" style="font-family: CYBORG;">RCTN</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#overview">Resumen</a></li>
+                <li><a href="#statistics">Estadísticas</a></li>
+                <li><a href="#profile">Perfil</a></li>
+                <li><a href="#logout" id="logout">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <h1>Bienvenido, <span id="username">Usuario</span></h1>
+            <p>Este es tu panel principal donde podrás gestionar tus recursos.</p>
+        </section>
+
+        <section id="overview">
+            <h2>Resumen</h2>
+            <p>Aquí encontrarás un resumen rápido de tus actividades recientes.</p>
+            <!-- Contenido adicional -->
+        </section>
+
+        <section id="statistics">
+            <h2>Estadísticas</h2>
+            <p>Visualiza gráficos e información relevante sobre tus datos.</p>
+            <!-- Espacio para gráficos o estadísticas -->
+        </section>
+
+        <section id="profile" class="profile-section">
+            <h2>Perfil</h2>
+            <p>Actualiza tu información personal y preferencias.</p>
+            <!-- Formulario de perfil -->
+            <form id="profileForm" class="profile-form">
+                <label for="nombre" class="profile-label">Nombre:</label>
+                <input type="text" id="nombre" class="profile-input">
+                <button type="button" id="updateName" class="profile-btn">Actualizar Nombre</button>
+        
+                <label for="correo" class="profile-label">Correo:</label>
+                <input type="email" id="correo" class="profile-input">
+                <button type="button" id="updateEmail" class="profile-btn">Actualizar Correo</button>
+        
+                <label for="contraseñaActual" class="profile-label">Contraseña Actual:</label>
+                <input type="password" id="contraseñaActual" class="profile-input">
+        
+                <label for="nuevaContraseña" class="profile-label">Nueva Contraseña:</label>
+                <input type="password" id="nuevaContraseña" class="profile-input">
+                <button type="button" id="updatePassword" class="profile-btn">Actualizar Contraseña</button>
+            </form>
+            <br><br>
+            <button type="button" id="deleteAccount" class="delete-btn">Eliminar Cuenta</button>
+        </section>
+        
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 <span class="rctn-logo">RCTN</span>. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

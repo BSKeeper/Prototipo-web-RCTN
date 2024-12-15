@@ -1,0 +1,257 @@
+/* Importing the custom font */
+@font-face {
+    font-family: 'CYBORG';
+    src: url('../assets/fonts/CYBORG_.TTF') format('woff2');
+}
+
+/* Root variables for the color palette */
+:root {
+    --blue-light: #d0ebff;
+    --blue-main: #1e90ff;
+    --blue-dark: #003f88;
+    --white: #ffffff;
+    --grey-light: #f8f9fa;
+    --grey-dark: #343a40;
+    --red-dark: #8B0000;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--grey-light);
+    color: var(--grey-dark);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--blue-main);
+    color: var(--white);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--red-dark);
+}
+/* Clase para aplicar la fuente CYBORG específicamente al texto RCTN */
+.rctn-logo {
+    font-family: 'CYBORG', sans-serif;
+    color: var(--red-dark); /* Opcional, para asegurarte de que el color sea consistente */
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: var(--blue-light);
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--blue-dark);
+    color: var(--white);
+}
+
+/* dashboard*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8fb;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #00274d;
+    color: white;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #66b2ff;
+}
+
+.container {
+    padding: 30px;
+}
+
+.dashboard-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00274d;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #00274d;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Estilo para la sección de perfil */
+.profile-section {
+    background-color: var(--blue-light); /* Fondo suave para la sección */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+.profile-section h2 {
+    font-size: 24px;
+    color: #005a8f; /* Color azul característico de RCTN */
+    text-align: center;
+}
+
+.profile-section p {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo para las etiquetas */
+.profile-label {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilo para los inputs */
+.profile-input {
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.profile-input:focus {
+    border-color: #005a8f;
+    outline: none;
+}
+
+/* Estilo para los botones */
+.profile-btn {
+    background-color: #005a8f; /* Azul característico */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-btn:hover {
+    background-color: #004a72;
+}
+
+/* Estilo para el botón de eliminar cuenta */
+.delete-btn {
+    background-color: red;
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+/* Estilo para el menú */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #005a8f; /* Azul característico de RCTN */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover para los enlaces */
+.menu a:hover {
+    background-color: #004a72; /* Color más oscuro cuando se pasa el mouse */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+/* Efecto hover para el enlace de Cerrar Sesión */
+#logout:hover {
+    background-color: red; /* Rojo para el botón de cerrar sesión */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - RCTN</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <header>
+        <div class="logo" style="font-family: CYBORG;">RCTN</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../puc/index.html">PUC</a></li>
+                <li><a href="../expertos/index.html">Expertos</a></li>
+                <li><a href="../nomina/index.html">Nómina</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contacto-section">
+            <h1>Contáctanos</h1>
+            <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros. Te responderemos lo antes posible.</p>
+            
+            <form action="#" method="POST" class="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 <span class="rctn-logo">RCTN</span>. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/contacto.js"></script>
+</body>
+</html>
